@@ -1,0 +1,38 @@
+#toast-container {
+    display:block;
+    position: fixed;
+    @media only screen and (min-width: 0) {
+        width: 100%;
+        bottom: 5%;    
+    }
+    @media only screen and (min-width: $large-screen) {
+        width: 15%;
+        top: 5%;
+        right: 5%;
+    }
+}
+.toast {
+    @extend .z-depth-1;
+    margin: 10px auto;
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background-color: #323232;
+    padding: 10px 4rem;
+    @include border-box();
+    border-radius: 2px;
+    display: table;
+    top: 0px;
+    
+    
+    
+    span {
+        margin: auto 0;
+        padding: 0px;
+        font-size: 1.1rem;
+        font-weight: 300;
+        display: table-cell;
+        color: #FFF;
+        vertical-align: middle;
+    }
+}

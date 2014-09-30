@@ -4,6 +4,7 @@
 @import "components/prefixer";
 @import "components/mixins";
 
+
 // Reset
 @import "components/normalize";
 
@@ -15,4 +16,7 @@
 @import "components/navbar";
 @import "components/roboto";
 @import "components/typography";
-@import "components/shadow";
+@import "components/cards";
+@import "components/input_fields";
+@import "components/toast";
+@import "components/tabs";
