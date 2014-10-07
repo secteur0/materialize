@@ -1,0 +1,42 @@
+$color: #2196F3;
+$font: "Roboto";
+$defshadow: 0px 2px 10px
+        rgba(0,0,0,.3),0px 0px 1px 
+        rgba(0,0,0,.1),inset 0px 1px 0px 
+        rgba(255,255,255,.25),
+        inset 0px -1px 0px rgba(0,0,0,.15);
+
+.button {
+    height: 72px;
+    width: 176px;
+    padding: 20px; 
+	  text-decoration:none;
+    font-family: $font;
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 72px;
+}
+
+.button.raise {
+	  background-color: $color;
+    color: #FFFFFF;
+    box-shadow: $defshadow;
+}
+
+.button.flat {
+ 	box-shadow: none;
+ 	background-color: transparent;
+ 	color: #343434;
+ }
+  
+.button.raise.disabled {
+    box-shadow: none;
+    color: lighten(#606060, 40%);
+    background-color: lighten(#606060,30%);
+ }
+ 
+.button.flat.disabled {
+  color: lighten(#999, 10%);
+  background-color: lighten(#999, 30%);
+}
