@@ -19,10 +19,15 @@ nav {
     float: left;
     display: inline-block;
     font-size: 23px;
+
+    &.right {
+      float: right;
+    }
   }
 
   ul {
     margin: 0;
+    float: right;
 
     li { 
       float: left;
@@ -36,13 +41,11 @@ nav {
     a { 
       font-size: 14px;
       color: #fff; 
+      display: block;
     }
 
     &.left {
       float: left;
-    }
-    &.right {
-      float: right;
     }
   }
 }

@@ -13,6 +13,7 @@ ul.tabs {
     padding: 0 20px;
     margin: 0;
     text-transform: uppercase;
+    letter-spacing: .8px;
     width: auto;
 
     a {
@@ -28,4 +29,8 @@ ul.tabs {
     height: 2px;
     background-color: $blue;
   }
+}
+
+@media #{$small-and-up} {
+  ul.tabs li.tab { padding: 0; }
 }
